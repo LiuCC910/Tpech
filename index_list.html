@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺北市立聯合醫院－供膳衛生安全管理作業系統｜UI清單</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="index_list/list.css">
+	<link href="favicon.png" rel="icon" type="image/x-icon">
+</head>
+<body>
+
+    <div class="demo_wrap">
+        <h1>UI清單</h1>
+        <!--div class="btn_grp" style="float:right;">
+            <span id="current_time"></span>
+            <a href="#" class="btn">切版檔案更新請按此下載</a>
+        </div-->
+        <hr style="clear:both">
+        <div class="table_wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面</th>
+                        <th>檔案名稱／連結</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>DEMO用(控制瀏覽器大小)</td>
+                        <td>
+                            <ol>
+                                <li>檢核員情境(手機)：<a href="template_html/phone-demo.html" target="_blank"></a></li>
+                                <li>監管者介面(平板示意)：
+                                    <a href="template_html/tablet-demo.html" target="_blank"></a><br>
+                                    轉橫式：<a href="template_html/tablet_landscape-demo.html" target="_blank"></a>
+                                </li>
+                            </ol>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="text-left">任務管理使用情境</td>
+                        <td>
+                            <ol>
+                                <li>登入：<a href="template_html/login.html" target="_blank"></a></li>
+                                <li>任務看板：<a href="template_html/home.html" target="_blank"></a></li>
+                                <li>供膳管理日誌：<a href="template_html/diary.html" target="_blank"></a></li>
+                                <li>檢核項目(1) 服裝儀容/人事管理紀錄(關聯表單)：<br>
+                                    <a href="template_html/formcheck-1.html" target="_blank"></a><br>
+                                    填寫關聯紀錄表(語音輸入/拍照)：<a href="template_html/formcheck-1(2).html" target="_blank"></a><br>
+                                    拍照完成儲存：<a href="template_html/formcheck-1(3).html" target="_blank"></a>
+                                </li>
+                                <li>【可跳過】檢核項目(2) 配膳檢查/督餐作業表(連動表單)：
+                                    連動表單檢核<a href="template_html/diary-2.html" target="_blank"></a><br>
+                                    ＊點選項四以外的區域就直接完成檢核，不會進連動表單。
+                                    <ul>
+                                        <li><a href="template_html/formcheck-2.html" target="_blank"></a></li>
+                                        <li><a href="template_html/formcheck-2(2).html" target="_blank"></a></li>
+                                        <li><a href="template_html/formcheck-2(3).html" target="_blank"></a></li>
+                                    </ul>
+                                </li>
+                                <li>完成檢核、簽章送出：
+                                    <a href="template_html/diary-3.html" target="_blank"></a><br>
+                                    <a href="template_html/diary-3-sign.html" target="_blank"></a><br>
+                                    導回任務首頁：<a href="template_html/home-OK.html" target="_blank"></a>
+                                </li>
+                            </ol>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <script>
+            var date = document.lastModified;
+            document.write("Last Modified: "+date);
+        </script>
+        </div>
+
+
+
+    </div>
+    <a href="#" class="scrollToTop" >回頁首</a>
+
+    <script src="index_list/jquery-3.3.1.min.js"></script>
+    <script src="index_list/jquery.easing.min.js"></script>
+    <!--script src="js/hyui.js"></script>
+    <script src="js/customize.js"></script-->
+    <script>
+        $(function() {
+            $('tbody').find('a').each(function(index, el) {
+                var Link = $(this).attr('href');
+                $(this).text(Link);
+            });
+        })
+    </script>
+</body>
+
+</html>

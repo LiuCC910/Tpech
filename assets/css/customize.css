@@ -1,0 +1,122 @@
+#app {width: fit-content; margin: 0 auto;}
+.app.bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../index_list/hand-holding-tablet.png);
+    background-size: cover;
+    background-position: top;
+    background-position: right;
+}
+.app.bg img {
+    width: 465px;
+    margin: 15px 0 0 150px;
+}
+
+.app.bgtablet {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../index_list/tablet_Landscape.png);
+    background-repeat: no-repeat;
+    background-size: auto 806px;
+    background-position: top center;
+}
+.app iframe {
+    width:1033px;
+    height:695px;
+    position: relative;
+    top: 75px;
+    left: 45.5%;
+    transform: translateX(-45.5%);
+}
+
+.app.bgtabletPortrait {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../index_list/tablet_Portrait.png);
+    /*background-size: contain;
+    background-size: auto 100vh;*/
+    background-size: 662px auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.app iframe.Portrait {
+    width:603px;
+    height:calc(100vh - 170px);
+    position: relative;
+    top: 112px;
+    left: 49.88%;
+    transform: translateX(-50%);
+    border-radius:0 0 10px 10px;
+}
+@media (max-width: 1448px) {
+    .app iframe.Portrait {
+        height:calc(100vh - 115px);
+        border-radius:0;
+    }
+}
+.app.bgtabletLandscape {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../index_list/tablet_Landscape.png);
+    /*background-size: contain;*/
+    background-size: auto 100vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.app iframe.Landscape {
+    width:1226px;
+    height:calc(100vh - 150px);
+    position: relative;
+    top: 112px;
+    left: 48.85%;
+    transform: translateX(-50%);
+    border-radius:0 0 10px 10px;
+}
+@media (max-width: 1448px) {
+    .app iframe.Landscape {
+        width:1036px;
+        height:calc(100vh - 131px);
+        top: 95px;
+        left: 48.70%;
+    }
+}
+.app.bgphone {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    bottom: 10px;
+    background-image: url(../../index_list/phone.png);
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    background-size: auto 805px /*calc(100vh - 135px)*/;
+    background-position: top center;
+}
+.app iframe.phone {
+    width: 361.69px;
+    height:calc(805px - 65px);
+    position: relative;
+    top: 53px;
+    left: 49.95%;
+    transform: translateX(-50%);
+    border-radius:0 0 50px 50px;
+}
+
+
+.totablet, .tabletdirection {
+    border-radius: 25px;
+    width:50px;
+    height:50px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #ccc9c9;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tabletdirection {background-image: url(../../index_list/tablet_icon.png);}
+.totablet {background-image: url(../../index_list/85192-200.png);}
